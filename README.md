@@ -8,6 +8,7 @@
 - Webpack
 - React
 - Redux
+- js
 
 ## Live link
  [BookStore App](https://bbookstores.herokuapp.com/).
