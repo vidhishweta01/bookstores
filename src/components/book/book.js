@@ -1,7 +1,6 @@
-/* eslint-disable no-console */
-/* eslint-disable react/destructuring-assignment */
 const Book = (book, key) => {
-  const { id, title, category } = book.obj;
+  const { obj } = book;
+  const { id, title, category } = obj;
   return (
     <tr>
       <td id={key}>{id}</td>
