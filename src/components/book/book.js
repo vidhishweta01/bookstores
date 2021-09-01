@@ -1,21 +1,31 @@
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable react/no-unused-prop-types */
 import propTypes from 'prop-types';
 
-const Book = (book) => {
-  const { obj } = book;
+const Book = (props) => {
+  const { obj, button } = props;
   const { id, title, category } = obj;
+
   return (
-    <tr>
+    <tr key={id}>
       <td>{id}</td>
       <td>{title}</td>
       <td>{category}</td>
+      <td>{button}</td>
     </tr>
   );
 };
 
 Book.propTypes = {
-  book: propTypes.object.isRequired,
+  obj: propTypes.shape({
+    id: propTypes.number,
+    title: propTypes.string,
+    category: propTypes.string,
+  }).isRequired,
+};
+
+Book.propTypes = {
+  button: propTypes.shape({
+    type: propTypes.string,
+  }).isRequired,
 };
 
 export default Book;
