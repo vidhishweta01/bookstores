@@ -3,8 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './containers/App';
-import store from './reducers/index';
 import reportWebVitals from './reportWebVitals';
+import store from './reducers/index';
 
 ReactDOM.render(
   <Provider store={store}>
