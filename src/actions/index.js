@@ -1,9 +1,9 @@
-export const CREATE_BOOK = (obj) => ({
-  type: 'CREATE_BOOK',
+export const CreateBook = (obj) => ({
+  type: 'CreateBook',
   obj,
 });
 
-export const REMOVE_BOOK = (obj) => ({
-  type: 'REMOVE_BOOK',
+export const RemoveBook = (obj) => ({
+  type: 'RemoveBook',
   obj,
 });

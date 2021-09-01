@@ -18,10 +18,11 @@ const initialState = [
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'CREATE_BOOK':
-      return [...state, action.book];
-    case 'REMOVE_BOOK':
-      return state.filter((book) => book.id !== action.book.id);
+    case 'CreateBook': {
+      return [...state, action.obj];
+    }
+    case 'RemoveBook':
+      return state.filter((book) => book.id !== action.obj.id);
     default: return state;
   }
 };
