@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import Book from '../../components/book/index';

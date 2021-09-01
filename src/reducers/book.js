@@ -23,13 +23,7 @@ const reducer = (state = initialState, action) => {
       return [...state, action.obj];
     }
     case 'REMOVE_BOOK':
-      return state.filter((book) => {
-        console.log('start log');
-        console.log(`bookid: ${book.id}`);
-        console.log(`action: ${action.obj.id}`);
-        console.log('end log');
-        return book.id !== action.obj.id;
-      });
+      return state.filter((book) => book.id !== action.obj.id);
     default: return state;
   }
 };
