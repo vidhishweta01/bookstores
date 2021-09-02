@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
-import store from './reducers/index';
+import store from './reducers/store';
 
 ReactDOM.render(
   <Provider store={store}>
