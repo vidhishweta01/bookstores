@@ -1,14 +1,14 @@
 export const CreateBook = (obj) => ({
-  type: 'CREATE_BOOK',
+  type: 'CreateBook',
   obj,
 });
 
 export const RemoveBook = (obj) => ({
-  type: 'REMOVE_BOOK',
+  type: 'RemoveBook',
   obj,
 });
 
 export const ChangeFilter = (filterby) => ({
-  type: 'CHANGE_FILTER',
+  type: 'ChangeFilter',
   filterby,
 });

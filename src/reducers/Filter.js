@@ -2,7 +2,7 @@ import { filterState } from './initialState';
 
 const filterReducer = (state = filterState, action) => {
   switch (action.type) {
-    case 'CHANGE_FILTER': {
+    case 'ChangeFilter': {
       return action.filterby;
     }
     default: return state;
