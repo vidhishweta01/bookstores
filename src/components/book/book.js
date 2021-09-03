@@ -23,7 +23,7 @@ const Book = (props) => {
         <div className="flexRow">
           <div className="Oval-2" />
           <div className="flexColumn">
-            <span className="percent-Complete">64%</span>
+            <span className="percent-Complete">100%</span>
             <span className="completed">completed</span>
           </div>
         </div>
