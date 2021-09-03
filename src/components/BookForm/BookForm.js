@@ -37,7 +37,7 @@ const BookForm = () => {
             dispatch(CreateBook({ id: uuidv4(), title, category }));
           }}
         >
-          Submit
+          ADD BOOK
         </button>
       </div>
     </div>
