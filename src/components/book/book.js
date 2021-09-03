@@ -14,11 +14,12 @@ const Book = (props) => {
       <div className="flexColumn">
         <td className="category">{category}</td>
         <td className="title">{title}</td>
-        <td>
+        <td className="writer">J.J Collins</td>
+        <div className="button-div">
           <button className="Remove" type="button" onClick={() => dispatch(RemoveBook(obj))}>
             Remove
           </button>
-        </td>
+        </div>
       </div>
       <div className="flexRow ui_continer">
         <div className="flexRow">
