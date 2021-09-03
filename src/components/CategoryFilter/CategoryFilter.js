@@ -20,7 +20,7 @@ const CategoryFilter = () => {
           <option value="Sci-Fi">Sci-Fi</option>
         </select>
       </label>
-      <button className="btn" type="button" onClick={() => dispatch(ChangeFilter(filter))}>Apply Filter</button>
+      <button className="butn" type="button" onClick={() => dispatch(ChangeFilter(filter))}>Apply Filter</button>
     </>
   );
 };
