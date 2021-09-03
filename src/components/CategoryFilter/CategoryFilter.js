@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { ChangeFilter } from '../../actions/index';
-import './CategoryFilter.css';
+import './categoryFilter.css';
 
 const CategoryFilter = () => {
   const [filter, setFilter] = useState('All');

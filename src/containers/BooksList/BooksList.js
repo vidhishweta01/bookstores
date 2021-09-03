@@ -15,13 +15,13 @@ const BooksList = () => {
   }, [list]);
   return (
     <>
-    <table className="table">
-      <tbody>
-        <tr><CategoryFilter /></tr>
-        { filter === 'All' ? Books.map((book) => (<Book key={book.id} obj={book} />)) : Books.filter((book) => filter === book.category).map((book) => (<Book key={book.id} obj={book} />))}
-      </tbody>
-    </table>
-  </>
+      <table className="table">
+        <tbody>
+          <tr><CategoryFilter /></tr>
+          { filter === 'All' ? Books.map((book) => (<Book key={book.id} obj={book} />)) : Books.filter((book) => filter === book.category).map((book) => (<Book key={book.id} obj={book} />))}
+        </tbody>
+      </table>
+    </>
   );
 };
 
