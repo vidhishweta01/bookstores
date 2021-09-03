@@ -17,6 +17,11 @@
   flex-wrap: nowrap;
 }
 
+.image {
+  width: 50%;
+  margin-right: 2vw;
+}
+
 .flexRow {
   display: flex;
   flex-direction: row;
@@ -26,7 +31,6 @@
 }
 
 .ui_continer {
-  align-items: center;
   width: 50%;
   justify-content: space-around;
 }
