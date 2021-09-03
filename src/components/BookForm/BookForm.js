@@ -2,6 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { CreateBook } from '../../actions/index';
+import './bookform.css';
 
 const BookForm = () => {
   const [title, setTitle] = useState('');
@@ -13,11 +14,11 @@ const BookForm = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
-      <input type="text" onChange={(e) => handleChangeTitle(e)} value={title} />
+    <div className="form">
+      <input className="input" type="text" onChange={(e) => handleChangeTitle(e)} value={title} placeholder="Book Title" />
       <label htmlFor="category">
-        Choose a category:
-        <select name="category" id="category" onChange={(e) => handleChagneCategory(e)} value={category}>
+        <select className="select" name="category" id="category" onChange={(e) => handleChagneCategory(e)} value={category}>
+          <option value="Action" selected disabled hidden>Category</option>
           <option value="Action">Action</option>
           <option value="Biography">Biography</option>
           <option value="History">History</option>
@@ -28,6 +29,7 @@ const BookForm = () => {
         </select>
       </label>
       <button
+        className="btn"
         type="submit"
         onClick={() => {
           dispatch(CreateBook({ id: uuidv4(), title, category }));
