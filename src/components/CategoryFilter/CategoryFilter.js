@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { ChangeFilter } from '../../actions/index';
+import './categoryFilter.css';
 
 const CategoryFilter = () => {
   const [filter, setFilter] = useState('All');
@@ -8,9 +9,7 @@ const CategoryFilter = () => {
   return (
     <>
       <label htmlFor="filter">
-        Choose a FilterBy:
-
-        <select name="filter" id="filter" onChange={(e) => setFilter(e.target.value)} value={filter}>
+        <select className="select" name="filter" id="filter" onChange={(e) => setFilter(e.target.value)} value={filter}>
           <option value="All">All</option>
           <option value="Action">Action</option>
           <option value="Biography">Biography</option>
@@ -21,7 +20,7 @@ const CategoryFilter = () => {
           <option value="Sci-Fi">Sci-Fi</option>
         </select>
       </label>
-      <button type="button" onClick={() => dispatch(ChangeFilter(filter))}>Apply Filter</button>
+      <button className="butn" type="button" onClick={() => dispatch(ChangeFilter(filter))}>Apply Filter</button>
     </>
   );
 };
